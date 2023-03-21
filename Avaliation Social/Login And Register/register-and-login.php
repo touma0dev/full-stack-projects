@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="autocomplete" content="off">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link rel="stylesheet" href="/login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Para o Formulario</title>
+</head>
+<body>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+
+		<form id="register-form" action="javascript:void(0)" method="POST"   autocomplete="off" readonly 
+onfocus="this.removeAttribute('readonly');"> 
+			<h1>Criar Uma conta</h1>
+			<span>Use Somente gmail ou outlook.</span>
+			<input id="usuario"  autocomplete="off" readonly 
+onfocus="this.removeAttribute('readonly');" name="usuario"type="text" placeholder="Name" />
+			<input id="email" name="email" type="email"   autocomplete="off" readonly 
+onfocus="this.removeAttribute('readonly');" placeholder="Email" />
+			<input name="register-password" pattern="[a-zA-Z0-9]+"   autocomplete="off" readonly 
+onfocus="this.removeAttribute('readonly');" type="password" placeholder="Password" />
+			<button>Registrar</button>
+      <p id="result"></p>
+      <p id="result-user"></p>
+
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form id="login-form"  action="javascript:void(0)" method="POST"   autocomplete="off" readonly 
+onfocus="this.removeAttribute('readonly');">
+			<h1>Realize Seu Login Aqui!</h1>
+			<div class="social-container">
+				<a href="#" class="social"><svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.6 6.31999C16.8669 5.58141 15.9943 4.99596 15.033 4.59767C14.0716 4.19938 13.0406 3.99622 12 3.99999C10.6089 4.00135 9.24248 4.36819 8.03771 5.06377C6.83294 5.75935 5.83208 6.75926 5.13534 7.96335C4.4386 9.16745 4.07046 10.5335 4.06776 11.9246C4.06507 13.3158 4.42793 14.6832 5.12 15.89L4 20L8.2 18.9C9.35975 19.5452 10.6629 19.8891 11.99 19.9C14.0997 19.9001 16.124 19.0668 17.6222 17.5816C19.1205 16.0965 19.9715 14.0796 19.99 11.97C19.983 10.9173 19.7682 9.87634 19.3581 8.9068C18.948 7.93725 18.3505 7.05819 17.6 6.31999ZM12 18.53C10.8177 18.5308 9.65701 18.213 8.64 17.61L8.4 17.46L5.91 18.12L6.57 15.69L6.41 15.44C5.55925 14.0667 5.24174 12.429 5.51762 10.8372C5.7935 9.24545 6.64361 7.81015 7.9069 6.80322C9.1702 5.79628 10.7589 5.28765 12.3721 5.37368C13.9853 5.4597 15.511 6.13441 16.66 7.26999C17.916 8.49818 18.635 10.1735 18.66 11.93C18.6442 13.6859 17.9355 15.3645 16.6882 16.6006C15.441 17.8366 13.756 18.5301 12 18.53ZM15.61 13.59C15.41 13.49 14.44 13.01 14.26 12.95C14.08 12.89 13.94 12.85 13.81 13.05C13.6144 13.3181 13.404 13.5751 13.18 13.82C13.07 13.96 12.95 13.97 12.75 13.82C11.6097 13.3694 10.6597 12.5394 10.06 11.47C9.85 11.12 10.26 11.14 10.64 10.39C10.6681 10.3359 10.6827 10.2759 10.6827 10.215C10.6827 10.1541 10.6681 10.0941 10.64 10.04C10.64 9.93999 10.19 8.95999 10.03 8.56999C9.87 8.17999 9.71 8.23999 9.58 8.22999H9.19C9.08895 8.23154 8.9894 8.25465 8.898 8.29776C8.8066 8.34087 8.72546 8.403 8.66 8.47999C8.43562 8.69817 8.26061 8.96191 8.14676 9.25343C8.03291 9.54495 7.98287 9.85749 8 10.17C8.0627 10.9181 8.34443 11.6311 8.81 12.22C9.6622 13.4958 10.8301 14.5293 12.2 15.22C12.9185 15.6394 13.7535 15.8148 14.58 15.72C14.8552 15.6654 15.1159 15.5535 15.345 15.3915C15.5742 15.2296 15.7667 15.0212 15.91 14.78C16.0428 14.4856 16.0846 14.1583 16.03 13.84C15.94 13.74 15.81 13.69 15.61 13.59Z" fill="#000000"/>
+                    </svg></i></a>
+				<a href="#" class="social"><svg fill="#000000" width="25px" height="40px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z" fill-rule="evenodd"/>
+                </svg></a>
+				<a href="#" class="social"><svg fill="#000000" width="40px" height="40px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"/></svg></a>
+			</div>
+            
+			<span>Entre em contato conosco!</span>
+			<input type="email"   autocomplete="off" readonly 
+onfocus="this.removeAttribute('readonly');" name='login' placeholder="Email" />
+			<input type="password"   autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" pattern="[a-zA-Z0-9]+" name='password' placeholder="Password" />
+			<div id="login-result"></div>
+			<button style="cursor:pointer;">Entrar!</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Bem-vindo De Volta.</h1>
+				<p>Mantenha-se Conectado, ja tem um login gostaria de logar?!</p>
+				<button class="ghost" style="cursor:pointer;" id="signIn">Entrar!</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Ola ,Registre-se Aqui!.</h1>
+				<p>Entre com seus dados pessoais aqui para realizar suas consultas.</p>
+				<button class="ghost" style="cursor:pointer;" id="signUp">Registrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</body>
+</html>
+<script>
+///LOGIN
+// Declarando a variável resultElement como uma variável global
+const loginForm = document.getElementById('login-form');
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const resultElement = document.getElementById('login-result');
+  const formData = new FormData(loginForm);
+  const url = "login.php";
+  fetch(url, {
+    method: 'POST',
+    credentials: 'include',
+    body: formData
+  })
+  .then((response) => response.json())
+  .then((data) => {
+if (data.status === "success") {
+    resultElement.innerHTML = data.message;
+    // Armazena a URL de redirecionamento em localStorage
+    localStorage.setItem('redirectUrl', 'https://dhardware.rf.gd/dashboard');
+    // Define o valor do cookie com o token
+    document.cookie = "token=" + data.token + ";path=/dashboard;";
+    // Recarrega a página
+    location.reload();
+}else {
+      resultElement.innerHTML = data.message;
+    }
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+});
+
+// Verifica se há uma URL de redirecionamento armazenada em localStorage
+const redirectUrl = localStorage.getItem('redirectUrl');
+if (redirectUrl) {
+  // Remove a URL de redirecionamento armazenada em localStorage
+  localStorage.removeItem('redirectUrl');
+  // Redireciona o usuário para a página de destino
+  window.location.href = redirectUrl;
+}
+
+
+/// REGISTRO NAO MECHE
+
+
+/// REGISTRO NAO MECHE
+const registerForm = document.getElementById('register-form');
+const emailInput = document.getElementById('email');
+const usuario = document.getElementById('usuario');
+
+const resultElement = document.getElementById('result');
+// evento de input no campo de e-mail
+usuario.addEventListener('input', () => {
+    const usuariolInput = usuario.value;
+    const isValid =/^[^-\s][a-zA-ZÀ-ú ]*/.test(usuariolInput); 
+    if (isValid) {
+       usuario.setCustomValidity('');// limpa mensagem de erro
+        registerForm.classList.remove('disabled'); // remove a classe que desabilita o botão de envio
+    } else {
+        usuario.setCustomValidity('Por favor, insira um nome válido com letras e espaços em branco.');
+        registerForm.classList.add('disabled'); // adiciona a classe que desabilita o botão de envio
+    }
+});
+emailInput.addEventListener('input', () => {
+    const email = emailInput.value;
+    const isValid = /^[^\s@]{6,}@[^\s@]+\.(?:gmail|hotmail|outlook|yahoo)\.com$/.test(email); // expressão regular para validar e-mails
+    if (isValid) {
+        resultElement.innerHTML = ''; // limpa mensagem de erro
+        registerForm.classList.remove('disabled'); // remove a classe que desabilita o botão de envio
+    } else {
+        resultElement.innerHTML = 'Email inválido';
+        registerForm.classList.add('disabled'); // adiciona a classe que desabilita o botão de envio
+    }
+});
+
+// evento de submit do formulário
+registerForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(registerForm);
+    const url = "registrar.php";
+    fetch(url, {
+        method: 'POST',
+        credentials: 'include',
+        body: formData
+    })
+        .then((response) => response.json())
+        .then((data) => {
+            if (data.status === "success") {
+                resultElement.innerHTML = data.message;
+                location.reload(true); // recarrega a página e limpa o cache
+                // exibir mensagem de sucesso no seu site
+            } else {
+                resultElement.innerHTML = data.message;
+                // exibir mensagem de erro no seu site
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+});
+</script>
+<?php
+session_unset();
+session_destroy();
+?>

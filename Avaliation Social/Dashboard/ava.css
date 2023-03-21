@@ -1,0 +1,238 @@
+  /*CSS FOR ALL  IN PAGE */
+body {
+  font-family: "DM Sans", sans-serif;
+  justify-content: center;
+  background-color: var(--app-container);
+}
+:root {
+  --app-container: #F3F6F9;
+  --main-color: #1f1c2e;
+  --secondary-color: #4A4A4A;
+  --link-color: #1f1c2e;
+  --link-color-hover: #c3cff4;
+  --link-color-active: #fff;
+  --link-color-active-bg: #1f1c2e;
+  --projects-section: #fff;
+  --message-box-hover: #fafcff;
+  --message-box-border: #e9ebf0;
+  --more-list-bg: #fff;
+  --more-list-bg-hover: #f6fbff;
+  --more-list-shadow: rgba(209, 209, 209, 0.4);
+  --button-bg: #1f1c24;
+  --search-area-bg: #fff;
+  --star: #1ff1c2e;
+  --message-btn: #fff;
+  --warning:#FF4B2B;
+}
+::selection {
+  background-color:var(--button-bg);
+  color:var(--projects-section);
+}
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:var(--app-container);
+}a,li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+button {
+  border-radius: 5px;
+  background: #FF416C;
+  background-color: linear-gradient(to right, #FF4B2B, #FF416C);
+  color: white;
+  border: none;
+  padding: 5pt 5pt;
+  width: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.25s all ease;
+}
+button:hover {
+  transform: translateY(1px);
+}
+/*class="pergunta"*/
+
+.navbar,.user{
+  margin: 7pt;
+  display: flex;
+  justify-content: space-between;
+}.user ,.logo{
+  text-align: center;
+  margin: 15pt;
+  padding:0px 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}.logo{
+  line-height: 24px;
+  font-weight: 700;
+}
+.user a{
+  padding:0px 5px;
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.avatar{
+  width: 20px;
+  padding:12px 33px;
+}.nome{
+  display: flex;  
+}
+.logout{
+  padding:12px 0px;
+}
+.warning{
+  color: red !important;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 700;
+}
+.form{
+  display: flex;
+  justify-content: center;
+}
+.pergunta{
+  font-size:14pt ;
+  padding: 7pt;
+  display: flex;
+}
+.app-icon {
+  width: 26px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  position: relative;
+}.app-icon:before {
+  top: -6px;
+}.app-icon:before, .app-icon:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  left: 50%;
+  transform: translatex(-50%);
+}.app-icon:after {
+  bottom: -6px;
+}.app-icon:before, .app-icon:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+  left: 50%;
+  transform: translatex(-50%);
+}
+/*Avaliation*/
+.projects-section {
+  flex: 2;
+  background-color: var(--projects-section);
+  border-radius: 32px;
+  padding: 32px 32px 0 32px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.loader{
+  width:100%;
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+}
+
+.dot{
+  height:40px;
+  width:40px;
+  border-radius:50%;
+}
+
+.dot:nth-child(1){
+  background-color:red;
+  animation: jump 0.6s 0.5s ease-in infinite
+}
+.dot:nth-child(2){
+  background-color:blue;
+  animation: jump 0.6s 0.7s ease-in infinite
+}
+.dot:nth-child(3){
+  background-color:orange;
+  animation: jump 0.6s 0.9s ease-in infinite
+}
+
+
+@keyframes jump{
+  0%{
+    transform: translate3D(0,0,0);
+    opacity: 0;
+  }
+    50%{
+    transform: translate3D(0,-15px,0);
+      opacity: 0.5;
+  }
+    100%{
+    transform: translate3D(0,0,0);
+      opacity: 1;
+  }
+}
+
+
+
+ 
